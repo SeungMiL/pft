@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { Category } from "../types";
 
 const NavItem: FunctionComponent<{
-  value: Category | "all";
+  value: Category | "전체";
   active: string;
   handleFilterCategory: Function;
 }> = ({ value, active, handleFilterCategory }) => {

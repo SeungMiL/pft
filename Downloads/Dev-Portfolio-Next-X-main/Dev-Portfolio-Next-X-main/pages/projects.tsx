@@ -9,12 +9,12 @@ import { Category } from "../types";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
-  const [active, setActive] = useState("All");
+  const [active, setActive] = useState("전체");
 
   const [showDetail, setShowDetail] = useState<null | Number>(null);
 
-  const handleFilterCategory = (category: Category | "all") => {
-    if (category === "all") {
+  const handleFilterCategory = (category: Category | "전체") => {
+    if (category === "전체") {
       setProjects(projectsData);
       setActive(category);
       return;
